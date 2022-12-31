@@ -30,7 +30,7 @@ body{
 /* Header, barra de navegacion */
 
 header{
-    display: block;
+    display: flex;
     width: 100%;
     height: 90px;
     background: rgba(53,103,164,0.8);
@@ -39,7 +39,7 @@ header{
 }
 
 header ul{
-    display: block;
+    display: flex;
     width: 60%;
     height: inherit;
     margin: 0px auto;
@@ -105,4 +105,128 @@ footer{
     margin:  0px auto;
     padding-top: 15px;
     color: rgba(0,0,0,0.5);
+}
+
+/* página Sobre mi */
+
+#title{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#title h1{
+    font-family: "finger";
+    font-size: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#title h2{
+    font-size: 25px;
+    color: gray;
+    margin: 5px 0px;
+}
+
+article.about{
+    width: 70%;
+    margin:  0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    padding: 20px 0px;
+    text-justify: newspaper;
+}
+
+/* Seccion con Formulario*/
+
+.container{
+    padding: 20px;
+    padding-top: 10px;
+
+}
+
+.container h2{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+form{
+    width: 40%;
+}
+
+form label{
+    display: block;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+form button,
+form input[type="submit"]{
+    font-size: 17px;
+    padding: 10px;
+    display: block;
+    margin-top: 15px;
+    color: white;
+    background :rgba(53,103,164,0.8);
+    border-radius: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+    width: 80%;
+    padding: 5px;
+}
+
+
+.form_error{
+    font-size: 13px;
+    padding: 2px;
+    background: red;
+    color: white;
+    margin-left: 5px;
+}
+
+.message{
+    width: 50%;
+    padding: 5px;
+    border:  1px solid #eee;
+}
+
+.success{
+    background: green;
+    color:white
+}
+
+.message a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.failed{
+    background: red;
+    color: white;
+
 }
