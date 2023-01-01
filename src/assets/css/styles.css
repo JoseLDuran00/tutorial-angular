@@ -223,6 +223,7 @@ form input[type="submit"],
 
 .button-delete{
     background-color: #990606;
+    cursor: pointer;
 }
 
 .icon{
