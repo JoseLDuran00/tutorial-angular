@@ -157,6 +157,22 @@ article.about{
 
 }
 
+.container .image{
+    float: left;
+    width: 45%;
+}
+
+.container .image img{
+
+    width: 100%;
+}
+
+.container .data{
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+}
+
 .container h2{
     display: block;
     border-bottom: 1px solid #ccc;
@@ -182,7 +198,9 @@ form label{
 }
 
 form button,
-form input[type="submit"]{
+form input[type="submit"],
+.button-edit,
+.button-delete{
     font-size: 17px;
     padding: 10px;
     display: block;
@@ -190,6 +208,26 @@ form input[type="submit"]{
     color: white;
     background :rgba(53,103,164,0.8);
     border-radius: 10px;
+}
+
+.button-edit,
+.button-delete{
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-edit{
+    background-color: #3b683b;
+}
+
+.button-delete{
+    background-color: #990606;
+}
+
+.icon{
+    width: 50%;
+    float: inline-end;
 }
 
 form input[type="text"],
@@ -255,4 +293,9 @@ form textarea{
 
 .project img{
     width: 100%;
+}
+
+.project a {
+    text-decoration: none;
+    color: black;
 }
