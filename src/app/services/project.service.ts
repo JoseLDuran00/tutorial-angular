@@ -47,6 +47,6 @@ import { outputAst } from '@angular/compiler';
             let params = JSON.stringify(project);
             let headers = new HttpHeaders().set('Content-Type','application/json');
 
-            return this._http.put(this.url+'project/'+identity, params, {headers : headers});
+            return this._http.put(this.url+'project/'+project._id, params, {headers : headers});
         }
     }
