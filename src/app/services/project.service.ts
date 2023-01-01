@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { identity, Observable } from 'rxjs';
 import { Project } from '../models/project';
 import { Global } from './global';
 import { outputAst } from '@angular/compiler';
@@ -41,5 +41,12 @@ import { outputAst } from '@angular/compiler';
             let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
             return this._http.delete(this.url+'project/'+id, {headers : headers})
+        }
+
+        updateProject(project: any):Observable<any>{
+            let params = JSON.stringify(project);
+            let headers = new HttpHeaders().set('Content-Type','application/json');
+
+            return this._http.put(this.url+'project/'+identity, params, {headers : headers});
         }
     }

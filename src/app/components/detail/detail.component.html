@@ -9,7 +9,7 @@
         <p>{{project.langs}}</p>
         <p>{{project.year}}</p>
         <p>
-            <a href="#" class="button-edit"><span class="icon">✏️</span> Editar  </a>
+            <a [routerLink]="['/editar-proyecto', project._id]" class="button-edit"><span class="icon">✏️</span> Editar  </a>
             <a (click)="deleteProject(project._id)" class="button-delete"><span class="icon">❌</span> Borrar  </a>
         </p>
     </div>
