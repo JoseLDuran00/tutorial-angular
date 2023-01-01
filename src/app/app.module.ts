@@ -11,6 +11,7 @@ import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { EditComponent } from './components/edit/edit.component';
 
 
 
@@ -23,6 +24,7 @@ import { DetailComponent } from './components/detail/detail.component';
     ContactComponent,
     ErrorComponent,
     DetailComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
